@@ -5,6 +5,8 @@ const Container = styled.View`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 0 30px;
 `;
 
 const Title = styled.Text`
