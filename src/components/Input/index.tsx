@@ -41,6 +41,8 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
 
   const handleInputBlur = useCallback(() => {
     setIsFocused(false);
+
+    inputValueRef.current.value ? setIsFilled(true) : setIsFilled(false);
   }, []);
 
   useImperativeHandle(ref, () => ({
